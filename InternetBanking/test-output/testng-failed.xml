@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.InternetBanking.utilities.ExtentReporting"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.InternetBanking.testCases.DataConnect">
+        <methods>
+          <include name="testDB"/>
+        </methods>
+      </class> <!-- com.InternetBanking.testCases.DataConnect -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
